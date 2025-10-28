@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Digital - Ferretería El Santandereano</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Lucide Icons (para iconos modernos) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Configuración de la fuente Inter y forzar el modo oscuro */
+        :root {
+            --color-primary: #f97316; /* Tailwind orange-500 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Fondo oscuro tipo GitHub */
+            color: #c9d1d9; /* Texto claro */
+            padding-bottom: 7rem; /* Espacio para el CTA fijo */
+        }
+        /* Estilos generales para el modo oscuro */
+        .card {
+            background-color: #161b22; /* Fondo de tarjeta más oscuro */
+            border: 1px solid #30363d;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        .section-header {
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+        /* Estilo para los iconos Lucide */
+        .icon {
+            color: var(--color-primary);
+            width: 24px;
+            height: 24px;
+            margin-right: 0.5rem;
+        }
+        /* Estilo para hacer la tabla responsiva */
+        @media (max-width: 640px) {
+            .table-container {
+                overflow-x: auto;
+            }
+            .cost-table th, .cost-table td {
+                min-width: 150px;
+                white-space: normal;
+            }
+        }
+        /* Botón de CTA flotante */
+        .fixed-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #161b22;
+            border-top: 1px solid #30363d;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 sm:p-8">
+    <!-- Contenedor principal centrado -->
+    <div class="max-w-4xl mx-auto space-y-8">
+        
+        <!-- Bloque de Título y Datos Generales -->
+        <header class="card p-6 sm:p-8">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">
+                <span class="text-orange-500">🧱</span> PROPUESTA DE PUBLICIDAD Y CRECIMIENTO DIGITAL
+            </h1>
+            <p class="text-lg text-gray-400">Para: <span class="font-semibold">Ferretería El Santandereano</span></p>
+            <p class="text-sm text-gray-500">Dirección: Cl. 35A Sur #26D -60, Bogotá</p>
+            <div class="mt-4 pt-4 border-t border-gray-700">
+                <!-- Actualizado con el nombre proporcionado -->
+                <p class="text-sm">Elaborado por: <span class="font-bold text-orange-300">J. Jimy Guluma Criollo</span></p>
+                <p class="text-sm mt-1">
+                    <span class="font-semibold text-orange-400">Objetivo Principal:</span> Aumentar las ventas, especialmente del servicio de arena a domicilio, y dar a conocer la ferretería en la zona.
+                </p>
+            </div>
+        </header>
+
+        <!-- Resumen Ejecutivo (NUEVA SECCIÓN) -->
+        <section class="p-6 bg-green-900/30 rounded-xl border border-green-700/50 mt-8">
+            <h2 class="text-xl font-bold text-green-400 mb-2 flex items-center">
+                <i data-lucide="zap" class="w-5 h-5 mr-2"></i> Resumen Ejecutivo: ¿Qué Logrará?
+            </h2>
+            <ul class="list-disc ml-5 text-gray-200 space-y-1">
+                <li>**Aumento de Ventas:** Incremento de hasta **60%** en pedidos de arena a domicilio en 3 meses.</li>
+                <li>**Visibilidad:** Posicionamiento como la ferretería de confianza de su zona.</li>
+                <li>**Simplicidad:** Manejo 100% de la estrategia y atención al cliente **desde su celular**, sin necesidad de web.</li>
+            </ul>
+        </section>
+
+        <!-- 1. Situación actual (Mantenida) -->
+        <section class="card p-6">
+            <h2 class="text-2xl section-header flex items-center mb-4">
+                <i data-lucide="search" class="icon"></i> 1. Situación actual
+            </h2>
+            <p class="text-gray-300 leading-relaxed">
+                La Ferretería El Santandereano es un negocio reconocido en su zona, con buena clientela y gran movimiento en la venta de arena para obras y construcciones.
+            </p>
+            <p class="mt-3 text-red-400 font-medium">
+                Sin embargo, no tiene página web ni redes sociales activas, lo que hace que muchas personas que podrían comprar, no sepan que existe o que ofrece entregas a domicilio.
+            </p>
+        </section>
+        
+        <!-- NUEVO: SECCIÓN 2 - PLAN BÁSICO -->
+        <section class="card p-6 bg-yellow-900/10 border-yellow-700/50">
+            <h2 class="text-3xl font-bold text-yellow-400 mb-2 flex items-center">
+                <i data-lucide="facebook" class="w-7 h-7 mr-2"></i> 2. OPCIÓN 1: Plan Básico
+            </h2>
+            <p class="text-gray-400 italic mb-4">
+                Ideal para iniciar sin invertir demasiado, pero con resultados visibles solo en Facebook.
+            </p>
+
+            <!-- Qué Incluye -->
+            <h3 class="text-xl section-header flex items-center mt-6 mb-3">
+                <i data-lucide="package" class="w-5 h-5 mr-1 text-orange-400"></i> ¿Qué incluye?
+            </h3>
+            <ul class="list-disc ml-5 text-gray-300 space-y-2">
+                <li>**Creación de Página de Facebook Profesional:** Configuración, diseño de identidad (portada y perfil) y botón de contacto directo a WhatsApp.</li>
+                <li>**Videos Publicitarios:** 2 videos cortos (15-30 seg) de alta calidad mostrando el servicio de arena a domicilio y los productos principales.</li>
+                <li>**Publicidad Pagada Local (Facebook Ads):** Campaña dirigida a barrios cercanos (radio de 5-10 km) con el objetivo de aumentar pedidos de arena.</li>
+                <li>**Manejo de Publicaciones:** 2 publicaciones semanales con fotos reales del negocio y asesoría para responder mensajes.</li>
+            </ul>
+
+            <!-- Duración y Resultados -->
+            <h3 class="text-xl section-header flex items-center mt-6 mb-3">
+                <i data-lucide="bar-chart" class="w-5 h-5 mr-1 text-orange-400"></i> Duración y Resultados
+            </h3>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-8 text-gray-300">
+                <p><span class="font-bold text-orange-300">Duración:</span> 4 semanas.</p>
+                <p><span class="font-bold text-orange-300">Resultados Esperados:</span> Aumento del 30% al 40% en pedidos de arena a domicilio.</p>
+            </div>
+
+            <!-- Costos del Servicio (Tabla Básico) -->
+            <h3 class="text-xl section-header flex items-center mt-6 mb-3">
+                <i data-lucide="dollar-sign" class="w-5 h-5 mr-1 text-orange-400"></i> Costos del Servicio
+            </h3>
+            <div class="table-container">
+                <table class="cost-table w-full text-left border-collapse rounded-xl">
+                    <thead class="bg-yellow-600 text-white">
+                        <tr>
+                            <th class="p-3">Etapa</th>
+                            <th class="p-3">Duración</th>
+                            <th class="p-3 text-right">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-700 hover:bg-gray-700 transition duration-150">
+                            <td class="p-3 font-semibold text-yellow-300">Configuración y diseño</td>
+                            <td class="p-3">1 semana</td>
+                            <td class="p-3 font-bold text-right">$200.000 COP</td>
+                        </tr>
+                        <tr class="border-b border-gray-700 hover:bg-gray-700 transition duration-150">
+                            <td class="p-3 font-semibold text-yellow-300">Campaña publicitaria y manejo</td>
+                            <td class="p-3">1 mes</td>
+                            <td class="p-3 font-bold text-right">$300.000 COP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p class="mt-4 text-sm italic text-gray-400 p-3 bg-gray-800 rounded">
+                <span class="font-bold text-orange-400">💬 Pauta Publicitaria (Facebook Ads):</span> Se paga aparte. Recomendado: $150.000 - $200.000 mensuales.
+            </p>
+
+            <div class="mt-4 p-3 bg-yellow-900 rounded-lg text-center font-bold text-white shadow-xl">
+                📌 INVERSIÓN TOTAL ESTIMADA (Incluyendo Pauta Mínima):
+                <p class="text-2xl mt-1 text-yellow-300">👉 Desde $650.000 COP</p>
+            </div>
+        </section>
+
+        <!-- NUEVO: SECCIÓN 3 - PLAN AVANZADO -->
+        <section class="card p-6 bg-orange-900/10 border-orange-700/50">
+            <h2 class="text-3xl font-bold text-orange-400 mb-2 flex items-center">
+                <i data-lucide="rocket" class="w-7 h-7 mr-2"></i> 3. OPCIÓN 2: Plan Avanzado
+            </h2>
+            <p class="text-gray-400 italic mb-4">
+                Ideal para crecimiento sostenido, fidelización de clientes y profesionalización de la atención.
+            </p>
+
+            <!-- Qué Incluye -->
+            <h3 class="text-xl section-header flex items-center mt-6 mb-3">
+                <i data-lucide="package" class="w-5 h-5 mr-1 text-orange-400"></i> ¿Qué incluye?
+            </h3>
+            <ul class="list-disc ml-5 text-gray-300 space-y-2">
+                <li>**PRESENCIA COMPLETA:** Creación y manejo de Facebook **y TikTok** para máxima visibilidad.</li>
+                <li>**CONTENIDO Y PUBLICIDAD:** Videos publicitarios + campañas locales efectivas en Facebook.</li>
+                <li>**PUBLICACIONES CONSTANTES:** Contenido semanal variado (productos, consejos, clientes) para generar confianza.</li>
+                <li>**FIDELIZACIÓN (CRM Básico):** Organización de base de datos de clientes (Excel/Sheets).</li>
+                <!-- INICIO DEL CAMBIO: Énfasis en el ahorro de tiempo 24/7 -->
+                <li>**AUTOMATIZACIÓN WHATSAPP (24/7):** Configuración de WhatsApp Business para atender pedidos y responder preguntas automáticamente, **ahorrando tiempo y asegurando atención constante**.</li>
+                <!-- FIN DEL CAMBIO -->
+            </ul>
+
+            <!-- Costos del Servicio (Detalle Avanzado) -->
+            <h3 class="text-xl section-header flex items-center mt-6 mb-3">
+                <i data-lucide="trending-up" class="w-5 h-5 mr-1 text-orange-400"></i> Inversión Detallada (Primer Mes)
+            </h3>
+            <div class="bg-gray-800 p-4 rounded-lg space-y-2 text-gray-300">
+                <div class="flex justify-between border-b border-gray-700 pb-1">
+                    <span class="font-semibold text-orange-300">Configuración Inicial (Arranque de 1 semana):</span>
+                    <span class="font-bold">$250.000 COP</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-700 pb-1">
+                    <span class="font-semibold text-orange-300">Manejo y Publicidad (Mes 1):</span>
+                    <span class="font-bold">$350.000 COP</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-700 pb-1">
+                    <!-- INICIO DEL CAMBIO: Renombrar el opcional -->
+                    <span class="font-semibold text-yellow-300">OPCIONAL (Fidelización y Ahorro de Tiempo 24/7):</span>
+                    <!-- FIN DEL CAMBIO -->
+                    <span class="font-bold">$150.000 COP</span>
+                </div>
+                <div class="flex justify-between pt-2">
+                    <span class="font-semibold text-white">Mantenimiento Mensual (A partir del Mes 2):</span>
+                    <span class="font-bold text-green-400">$250.000 COP</span>
+                </div>
+            </div>
+
+            <p class="mt-4 text-sm italic text-gray-400 p-3 bg-gray-800 rounded">
+                <span class="font-bold text-orange-400">💬 Pauta Sugerida (Facebook/TikTok Ads):</span> Se paga aparte. Rango de $150.000 a $300.000 mensuales.
+            </p>
+
+            <div class="mt-4 p-3 bg-orange-900 rounded-lg text-center font-bold text-white shadow-xl">
+                📌 INVERSIÓN TOTAL INICIAL (Incluyendo Pauta Mínima y Módulo Opcional):
+                <p class="text-2xl mt-1 text-orange-300">👉 Desde $1.000.000 COP</p>
+            </div>
+        </section>
+
+        <!-- NUEVO: SECCIÓN 4 - CONCLUSIÓN Y COMPARACIÓN FINAL -->
+        <section class="card p-6">
+            <h2 class="text-2xl section-header flex items-center mb-4">
+                <i data-lucide="compass" class="icon"></i> 4. Conclusión: Elige tu camino
+            </h2>
+            <p class="text-gray-300 leading-relaxed font-medium mb-4">
+                Ambos planes están diseñados para lograr el objetivo principal: **aumentar las ventas de arena a domicilio y mejorar la visibilidad local.** La diferencia está en la velocidad y el alcance de las herramientas implementadas.
+            </p>
+
+            <div class="table-container">
+                <table class="cost-table w-full text-left border-collapse rounded-xl">
+                    <thead class="bg-orange-600 text-white">
+                        <tr>
+                            <th class="p-3">Plan</th>
+                            <th class="p-3">Enfocado en</th>
+                            <th class="p-3">Inversión estimada</th>
+                            <th class="p-3">Ideal para</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Fila Básico -->
+                        <tr class="border-b border-gray-700 hover:bg-gray-700 transition duration-150">
+                            <td class="p-3 font-semibold text-yellow-300">Básico</td>
+                            <td class="p-3">Facebook, videos y pauta local</td>
+                            <td class="p-3 font-bold">$650.000 aprox.</td>
+                            <td class="p-3">Probar resultados con bajo presupuesto</td>
+                        </tr>
+                        <!-- Fila Avanzado -->
+                        <tr class="border-b border-gray-700 hover:bg-gray-700 transition duration-150">
+                            <td class="p-3 font-semibold text-orange-300">Avanzado</td>
+                            <td class="p-3">Redes completas, fidelización y gestión</td>
+                            <td class="p-3 font-bold">$1.000.000 aprox.</td>
+                            <td class="p-3">Crecimiento sostenido y profesional</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p class="mt-6 text-sm italic text-gray-400">
+                Este plan es sencillo, práctico y adaptado a su negocio. No requiere página web ni conocimientos técnicos — todo se maneja desde su celular.
+            </p>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="text-center py-4 text-sm text-gray-500 border-t border-gray-800 mt-8">
+            <p>&copy; 2025 Propuesta Digital</p>
+        </footer>
+
+    </div>
+    
+    <!-- CTA FLOTANTE DE WHATSAPP (CON TU NÚMERO) -->
+    <div class="fixed-cta p-3 flex justify-center">
+        <!-- El número es +57 3227002789 -->
+        <a href="https://wa.me/573227002789?text=Hola%2C%20estoy%20interesado%20en%20la%20Propuesta%20Digital%20para%20la%20Ferreter%C3%ADa%20El%20Santandereano." 
+           target="_blank" 
+           class="w-full max-w-lg bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition duration-200 flex items-center justify-center space-x-2">
+            <i data-lucide="message-square-text" class="w-6 h-6"></i>
+            <span>¡Hablemos de los planes! Contáctame por WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Inicializar iconos de Lucide -->
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
